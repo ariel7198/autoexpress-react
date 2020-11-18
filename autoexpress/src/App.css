@@ -1,0 +1,92 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 70px;
+  /* pointer-events: none; */
+}
+
+.header {
+  background-color: rgba(13, 13, 13, .2);
+  backdrop-filter: blur(4px);
+  position: fixed;
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* font-size: calc(10px + 2vmin); */
+  color: #84afce;
+  padding: 15px 0px 15px 0px;
+  /* box-shadow:0 5px 30px 0 rgba(0,0,0,0.05) !important; */
+}
+section{
+  height: 100vh;
+  scroll-snap-align: start;
+  padding: 2rem;
+}
+.header .react-icons {
+  color: red;
+}
+.social-icons-ul{
+  list-style: none;
+  display: flex;
+}
+.social-icons-ul li {
+  margin-right: 15px;
+}
+.social-icons{
+  color: white;
+}
+
+.jumbotron{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  height: 100vh;
+  background-image: linear-gradient(rgba(13, 13, 13, .9), rgba(13, 13, 13, .55)), url('./imgs/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+.jumbotron h1{
+  font-size: 7em;
+  color: transparent;
+  letter-spacing: 20px;
+  font-weight: bold;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color:white;
+}
+.jumbotron h2{
+  font-size: 2.8em;
+  color: white;
+  font-weight: 300;
+}
+.about{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.about h2{
+  font-weight: 500;
+  font-size: 2.5em;
+}
+.about h3{
+  font-weight: 100;
+  font-size: 1.3em;
+}
+.about p{
+  font-size: 1em;
+  color: #e6e6e6;
+  line-height: 1.8;
+}
+.benefits{
+  
+}
+
