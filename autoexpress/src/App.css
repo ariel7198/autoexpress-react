@@ -1,3 +1,22 @@
+.blueShadow{
+  box-shadow:0 5px 30px 0 rgba(2, 4, 32, 0.247) !important;
+}
+.float-scroll{
+  position: fixed;
+  bottom: 0;
+  left: 47%;
+  margin-bottom: 5px;
+}
+button{
+  display: flex;
+  align-items: center;
+  border: none;
+  color: red;
+  padding: 15px;
+  color: white;
+  background: #0F3E60;
+  border-radius: 35px;
+}
 .App {
   text-align: center;
 }
@@ -5,6 +24,10 @@
 .App-logo {
   height: 70px;
   /* pointer-events: none; */
+}
+
+.underline{
+  text-decoration: underline solid #0F3E60;
 }
 
 .header {
@@ -30,6 +53,9 @@ section{
 .header .react-icons {
   color: red;
 }
+lottie-player{
+  height: 70px;
+}
 .social-icons-ul{
   list-style: none;
   display: flex;
@@ -54,6 +80,7 @@ section{
   background-attachment: fixed;
   background-position: center;
 }
+
 .jumbotron h1{
   font-size: 7em;
   color: transparent;
@@ -86,7 +113,48 @@ section{
   color: #e6e6e6;
   line-height: 1.8;
 }
-.benefits{
-  
+.benefits-grid{
+  display: grid;
+  width: 80vw;
+  grid-gap: 15px;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+}
+.discord{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.discord h2{
+  font-size: 1.9rem;
+}
+.discord-print{
+  flex-grow: 1;
+  align-self: right;
+}
+.discord-img{
+  border-radius: 15px;
+  height: 450px;
+}
+.discord-description{
+  width: 250px;
+  text-align: left;
+  padding: 15px;
+  flex-grow: 2;
+}
+.streamers{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.streamers-grid{
+  display: grid;
+  grid-auto-flow: row;
+  width: 60vw;
+  grid-gap: 10px;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
 }
 
