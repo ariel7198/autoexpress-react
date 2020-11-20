@@ -1,12 +1,17 @@
 import logo from './imgs/logo/logo_white.png';
+import { useState} from 'react'
+import { useEffect} from 'react'
 import './App.css';
+
 import Animation from './components/ScrollAnimation'
 import Benefitcard from './components/Benefitcard'
 import Streamercard from './components/Streamercard'
+
 import { IconContext } from 'react-icons';
 import { GrFacebookOption } from 'react-icons/gr';
 import { FiInstagram } from 'react-icons/fi';
 import { FaDiscord } from 'react-icons/fa';
+import { FaTwitch } from 'react-icons/fa';
 import { FaUserFriends } from 'react-icons/fa';
 import { ImTruck } from 'react-icons/im';
 import { AiFillFormatPainter } from 'react-icons/ai';
@@ -14,18 +19,21 @@ import { AiFillGift } from 'react-icons/ai';
 
 
 function App() {
+
+
   return (
     <div className="App">
-      <div className="header">
+      <div className='header' >
         <div className="logo">
           <img src={logo} className="App-logo" alt="logo" />
         </div>
         <div>
           <ul className="social-icons-ul">
             <IconContext.Provider value={{ className: 'social-icons', size: '1.6em' }}>
-              <li> <GrFacebookOption /> </li>
-              <li> <FiInstagram /> </li>
-              <li> <FaDiscord /> </li>
+              <li> <a href="https://www.facebook.com/autoexpresslogistica/"> <GrFacebookOption /> </a> </li>
+              <li> <a href="https://www.instagram.com/autoexpressvirtual/"> <FiInstagram /> </a> </li>
+              <li> <a href="https://www.twitch.tv/autoexpress"> <FaTwitch /> </a> </li>
+              <li> <a href="https://discord.com/invite/Zv9K2nE"> <FaDiscord /> </a> </li>
             </IconContext.Provider>
           </ul>
         </div>
@@ -44,6 +52,8 @@ function App() {
         <h3> Somos mais que uma empresa, somos um grupo </h3>
         <p> Nosso objetivo é permitir que todos tenham a oportunidade de jogar em grupo e tenham a melhor experiência
           possível em comboios </p>
+      </section>
+      <section className="benefit-section">
         <div className="benefits-grid">
           <Benefitcard
             title='Tenha amigos para jogar'
@@ -67,6 +77,7 @@ function App() {
           />
         </div>
         {/* <Animation /> */}
+
       </section>
 
       <section className="discord">
@@ -80,7 +91,7 @@ function App() {
             Fique por dentro de todas as novidades da empresa, participe dos comboios, converse
             com todos os membros, jogue conosco e divirta-se!
             </p>
-          <IconContext.Provider value={{ className: 'social-icons', size: '2em', style: {marginLeft: '5px'} }}>
+          <IconContext.Provider value={{ className: 'social-icons', size: '2em', style: { marginLeft: '5px' } }}>
             <button className="blue-shadow"> PARTICIPAR <FaDiscord /> </button>
           </IconContext.Provider>
         </div>
@@ -92,27 +103,29 @@ function App() {
           <h3> Conheça nossos membros streamers e acompanhe as lives </h3>
         </div>
         <div className="streamers-grid">
-          <Streamercard 
-            name='AutoExpress'
-            description='Seg-Sex: 19hrs'
+          <Streamercard
+            thumb='https://i.imgur.com/50ZcPh7.jpg'
+            name='Nandinho'
+            description=''
             icon={<GrFacebookOption />}
-            platform={'facebook'}
+            platform='facebook'
             link={'https://www.facebook.com/gaming/autoexpresslogistica'}
           />
-          <Streamercard 
-            name='Rinaldo'
-            description='Seg-Sex: 19hrs'
+          <Streamercard
+            thumb='https://i.imgur.com/qvn33F4.jpg'
+            name='Rinaldo Gameplay'
+            description=''
             icon={<GrFacebookOption />}
             platform={'facebook'}
-            link={'https://www.facebook.com/gaming/autoexpresslogistica'}
+            link={'https://www.facebook.com/gaming/rinaldogameplay'}
           />
-          <Streamercard 
-            name='Rinaldo'
-            
-          />
-          <Streamercard 
-            name='Fulano'
-            
+          <Streamercard
+            thumb='https://i.imgur.com/fK4NG9L.jpg'
+            name='Alexandre Gameplay'
+            description=''
+            icon={<GrFacebookOption />}
+            platform={'twitch'}
+            link={'https://www.facebook.com/Alexandre-GamePlay-108343850816551'}
           />
         </div>
       </section>

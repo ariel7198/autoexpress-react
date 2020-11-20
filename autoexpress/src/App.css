@@ -2,10 +2,12 @@
   box-shadow:0 5px 30px 0 rgba(2, 4, 32, 0.247) !important;
 }
 .float-scroll{
+  width: 100%;
   position: fixed;
   bottom: 0;
-  left: 47%;
-  margin-bottom: 5px;
+  margin: 0px auto;
+  /* left: 47%; */
+  /* margin-bottom: 5px; */
 }
 button{
   display: flex;
@@ -44,6 +46,20 @@ button{
   color: #84afce;
   padding: 15px 0px 15px 0px;
   /* box-shadow:0 5px 30px 0 rgba(0,0,0,0.05) !important; */
+}
+.header-small{
+  background-color: rgba(13, 13, 13, .2);
+  backdrop-filter: blur(4px);
+  position: fixed;
+  height: 5vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* font-size: calc(10px + 2vmin); */
+  color: #84afce;
+  padding: 15px 0px 15px 0px;
 }
 section{
   height: 100vh;
@@ -89,6 +105,16 @@ lottie-player{
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color:white;
 }
+@media (max-width: 1094px){
+  .jumbotron h1{
+    font-size: 2em;
+    letter-spacing: 10px;
+    -webkit-text-stroke-width: 1px;
+  }
+  .jumbotron h2{
+    font-size: 1.5em !important;
+  }
+}
 .jumbotron h2{
   font-size: 2.8em;
   color: white;
@@ -113,15 +139,23 @@ lottie-player{
   color: #e6e6e6;
   line-height: 1.8;
 }
+.benefit-section{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
 .benefits-grid{
   display: grid;
-  width: 80vw;
+  width: 90vw;
   grid-gap: 15px;
   justify-items: center;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(140px,1fr));
 }
 .discord{
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   flex-direction: row;
   justify-content: center;
@@ -130,12 +164,22 @@ lottie-player{
   font-size: 1.9rem;
 }
 .discord-print{
+  display: flex;
+  justify-content: flex-end;
   flex-grow: 1;
   align-self: right;
 }
 .discord-img{
   border-radius: 15px;
   height: 450px;
+}
+@media (max-width: 760px){
+  .discord-print{
+    justify-content: center;
+  }
+  .discord-img{
+    height: 300px;
+  }
 }
 .discord-description{
   width: 250px;
@@ -155,6 +199,12 @@ lottie-player{
   width: 60vw;
   grid-gap: 10px;
   justify-items: center;
-  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+}
+@media (max-width: 1262px){
+  .streamers-grid{
+    grid-template-columns: repeat(auto-fill, minmax(280px,1fr));
+  }
 }
 
