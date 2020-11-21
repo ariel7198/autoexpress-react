@@ -49,7 +49,7 @@ function App() {
 
       <section className="about">
         <h2> Você <span className='underline'>não</span> precisa jogar sozinho </h2>
-        <h3> Somos mais que uma empresa, somos um grupo </h3>
+        <h3> Somos mais que uma empresa, somos uma família </h3>
         <p> Nosso objetivo é permitir que todos tenham a oportunidade de jogar em grupo e tenham a melhor experiência
           possível em comboios </p>
       </section>
