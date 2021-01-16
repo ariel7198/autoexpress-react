@@ -62,7 +62,7 @@ button{
   padding: 15px 0px 15px 0px;
 }
 section{
-  height: 100vh;
+  min-height: 90vh;
   scroll-snap-align: start;
   padding: 2rem;
 }
@@ -82,7 +82,6 @@ lottie-player{
 .social-icons{
   color: white;
 }
-
 .jumbotron{
   display: flex;
   align-items: center;
@@ -96,7 +95,6 @@ lottie-player{
   background-attachment: fixed;
   background-position: center;
 }
-
 .jumbotron h1{
   font-size: 7em;
   color: transparent;
@@ -128,14 +126,14 @@ lottie-player{
 }
 .about h2{
   font-weight: 500;
-  font-size: 2.5em;
+  font-size: 2em;
 }
 .about h3{
   font-weight: 100;
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 .about p{
-  font-size: 1em;
+  font-size: 0.9em;
   color: #e6e6e6;
   line-height: 1.8;
 }
@@ -178,13 +176,13 @@ lottie-player{
     justify-content: center;
   }
   .discord-img{
-    height: 300px;
+    height: 200px;
   }
 }
 .discord-description{
   width: 250px;
   text-align: left;
-  padding: 15px;
+  padding: 10px;
   flex-grow: 2;
 }
 .streamers{
@@ -196,8 +194,8 @@ lottie-player{
 .streamers-grid{
   display: grid;
   grid-auto-flow: row;
-  width: 60vw;
-  grid-gap: 10px;
+  width: 70vw;
+  grid-gap: 25px;
   justify-items: center;
   /* grid-template-columns: repeat(3, 1fr); */
   grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
@@ -205,6 +203,18 @@ lottie-player{
 @media (max-width: 1262px){
   .streamers-grid{
     grid-template-columns: repeat(auto-fill, minmax(280px,1fr));
+  }
+}
+.contact{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 900px){
+  .contact{
+    flex-direction: column;
   }
 }
 

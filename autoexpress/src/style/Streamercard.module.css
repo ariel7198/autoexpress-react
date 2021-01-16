@@ -5,13 +5,23 @@
     background-color: black;
     justify-self: center;
     border-radius: 10px;
-    box-shadow:0 5px 30px 0 rgba(2, 4, 32, 0.247) !important;
+    /* box-shadow:0 5px 30px 0 rgba(2, 4, 32, 0.247) !important; */
 }
 @media (max-width: 1262px){
     .streamercard{
-      width: 280px;
+        display: flex;
+        width: 280px;
     }
-  }
+    .streamercard h1{
+        font-size: 1rem !important;
+    }
+    .cardheader{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
 a{
     text-decoration: none;
     font-size: 0.8rem;

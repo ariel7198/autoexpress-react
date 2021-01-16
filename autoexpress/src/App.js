@@ -1,11 +1,12 @@
 import logo from './imgs/logo/logo_white.png';
-import { useState} from 'react'
-import { useEffect} from 'react'
+import { useState } from 'react'
+import { useEffect } from 'react'
 import './App.css';
 
 import Animation from './components/ScrollAnimation'
 import Benefitcard from './components/Benefitcard'
 import Streamercard from './components/Streamercard'
+import Contactcard from './components/Contactcard'
 
 import { IconContext } from 'react-icons';
 import { GrFacebookOption } from 'react-icons/gr';
@@ -23,7 +24,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className='header' >
+      <div className='header'>
         <div className="logo">
           <img src={logo} className="App-logo" alt="logo" />
         </div>
@@ -72,7 +73,7 @@ function App() {
           />
           <Benefitcard
             title='Prêmios e vale presentes'
-            description='Dispute com os membros para ver quem roda mais e granhe prêmios'
+            description='Dispute com os membros para ver quem roda mais e ganhe prêmios'
             icon={<AiFillGift />}
           />
         </div>
@@ -92,7 +93,9 @@ function App() {
             com todos os membros, jogue conosco e divirta-se!
             </p>
           <IconContext.Provider value={{ className: 'social-icons', size: '2em', style: { marginLeft: '5px' } }}>
-            <button className="blue-shadow"> PARTICIPAR <FaDiscord /> </button>
+            <a href="https://discord.com/invite/Zv9K2nE" target="_blank">
+              <button className="blue-shadow"> PARTICIPAR <FaDiscord /> </button>
+            </a>
           </IconContext.Provider>
         </div>
       </section>
@@ -128,6 +131,25 @@ function App() {
             link={'https://www.facebook.com/Alexandre-GamePlay-108343850816551'}
           />
         </div>
+      </section>
+      <section className="contact">
+        <Contactcard
+          icon={<GrFacebookOption />}
+          link={'https://www.facebook.com/autoexpresslogistica/'}
+        />
+        <Contactcard
+          icon={<FiInstagram />}
+          link={'https://www.instagram.com/autoexpressvirtual/'}
+        />
+        <Contactcard
+          icon={<FaTwitch />}
+          link={'https://www.twitch.tv/autoexpress'}
+        />
+        <Contactcard
+          icon={<FaDiscord />}
+          link={'https://discord.com/invite/Zv9K2nE'}
+        />
+
       </section>
       <div className="float-scroll">
         <Animation />
