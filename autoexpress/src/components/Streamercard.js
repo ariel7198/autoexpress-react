@@ -6,7 +6,7 @@ import { IconContext } from 'react-icons';
 const Streamercard = ({ name, thumb, description, icon, platform, link }) => {
     return (
         <div className={style.streamercard}>
-            <a href={link}> <img src={thumb} class={style.streamerThumb} alt='nandinho' /> </a>
+            <a href={link}> <img src={thumb} className={style.streamerThumb} alt='nandinho' /> </a>
             <div className={style.cardheader}>
                 <h1> {name} </h1>
                 <p>
