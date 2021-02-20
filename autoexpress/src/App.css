@@ -19,6 +19,18 @@ button{
   background: #0F3E60;
   border-radius: 35px;
 }
+.btn-recrutamento{
+  font-size: 1.2rem;
+  padding: 20px;
+  transition: transform 0.1s ease;
+  background: #8A2387;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #0F3E60, #176daa);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #0F3E60, #176daa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.btn-recrutamento:hover{
+  transform: scale(1.1);
+  transition: transform 0.1s ease;
+}
 .App {
   text-align: center;
 }
@@ -61,6 +73,9 @@ button{
   color: #84afce;
   padding: 15px 0px 15px 0px;
 }
+.header-actions{
+  display: flex;
+}
 section{
   min-height: 90vh;
   scroll-snap-align: start;
@@ -89,6 +104,7 @@ lottie-player{
   justify-content: center;
   color: white;
   height: 100vh;
+  text-align: center;
   background-image: linear-gradient(rgba(13, 13, 13, .9), rgba(13, 13, 13, .55)), url('./imgs/background.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -204,6 +220,11 @@ lottie-player{
   .streamers-grid{
     grid-template-columns: repeat(auto-fill, minmax(280px,1fr));
   }
+}
+.recruitment{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .contact{
   display: flex;

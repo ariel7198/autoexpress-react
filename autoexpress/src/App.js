@@ -28,7 +28,8 @@ function App() {
         <div className="logo">
           <img src={logo} className="App-logo" alt="logo" />
         </div>
-        <div>
+        <div className='header-actions'>
+        <a href="#recrutamento"> <button className="btn-recrutamento"> Recrutamento </button> </a>
           <ul className="social-icons-ul">
             <IconContext.Provider value={{ className: 'social-icons', size: '1.6em' }}>
               <li> <a href="https://www.facebook.com/autoexpresslogistica/"> <GrFacebookOption /> </a> </li>
@@ -45,6 +46,8 @@ function App() {
           <h1>AUTOEXPRESS </h1>
           <h2>Logística </h2>
         </div>
+          <h3> Recrutamento aberto </h3>
+          <a href="#recrutamento"> <button href="#recrutamento" className="btn-recrutamento"> Quero participar </button> </a>
         {/* <Animation /> */}
       </section>
 
@@ -131,6 +134,10 @@ function App() {
             link={'https://www.facebook.com/Alexandre-GamePlay-108343850816551'}
           />
         </div>
+      </section>
+      <section className="recruitment" id="recrutamento">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdhDy3OFycETnmIskdpUCsqyu-84LpJGhoSUZVKdpghu6TBSw/viewform" title='formulário de recrutamento'
+      height="600px" width="800px"> </iframe>
       </section>
       <section className="contact">
         <Contactcard
