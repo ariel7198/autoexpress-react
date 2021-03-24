@@ -113,7 +113,8 @@ function App() {
             thumb='https://i.imgur.com/50ZcPh7.jpg'
             name='Nandinho'
             description=''
-            icon={<GrFacebookOption />}
+            // icon={<GrFacebookOption />}
+            icon={ <FaTwitch /> }
             platform={'twitch'}
             link={'https://www.twitch.tv/xn4ndinhox'}
           />
@@ -129,7 +130,8 @@ function App() {
             thumb='https://i.imgur.com/fK4NG9L.jpg'
             name='Alexandre Gameplay'
             description=''
-            icon={<GrFacebookOption />}
+            // icon={<GrFacebookOption />}
+            icon={ <FaTwitch /> }
             platform={'twitch'}
             link={'https://www.facebook.com/Alexandre-GamePlay-108343850816551'}
           />
