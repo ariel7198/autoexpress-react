@@ -114,8 +114,8 @@ function App() {
             name='Nandinho'
             description=''
             icon={<GrFacebookOption />}
-            platform='facebook'
-            link={'https://www.facebook.com/gaming/autoexpresslogistica'}
+            platform={'twitch'}
+            link={'https://www.twitch.tv/xn4ndinhox'}
           />
           <Streamercard
             thumb='https://i.imgur.com/qvn33F4.jpg'
